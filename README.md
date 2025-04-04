@@ -1,8 +1,12 @@
 # dreamcast2usb-howto
 Dreamcast Controller To USB Adapter
 
-Credit goes to megavolt85 for the firmware and key mapping. All detailed information that I used can be found here: https://www.dreamcast-talk.com/forum/viewtopic.php?f=5&t=17404
+Credit goes to megavolt85 for the firmware and key mapping. 
+All detailed information that I used can be found here: https://www.dreamcast-talk.com/forum/viewtopic.php?f=5&t=17404
+
+<p align="center">
 ![cable](pics/cable.jpg)
+</p>
 
 # Prerequisites
 1. Raspberry Pi Pico RP2040 ($4) https://www.raspberrypi.com/products/raspberry-pi-pico/
@@ -17,7 +21,7 @@ To connect on the USB end:
 3. USB flash drive for VMU emulation (USB hub required). I just need my saves so I leave a second controller plugged in with my VMUs
 
 # Software
-1. Download usb4maple(31.10.24).7z from this repo
+1. Download usb4maple(31.10.24).7z from [here](fw/usb4maple(31.10.24).7z)
 2. Unpack the file
 3. Press the button on the Raspberry Pi Pico while connecting it to a computer
 4. A new drive appears. Release the button.
@@ -29,14 +33,14 @@ Depending on what kind of controller wire you have, you will need to determine w
 Use a multimeter and connect one probe to a controller pin and with the other probe wire. Set it to 200 Ohm and when connecting the wires see if you get a value different from 0. Or if your multimeter has a continuity mode (usually marked with a diode symbol or sound wave icon) then it checks resistance and adds a beep if the resistance is very low.
 
 # Solder the wires, see the following schematic:
-![soldered board](pics/soldered.png)
+![soldered board](pics/soldered.jpg)
 
 Note: I had to solder an extra piece of wire to reach the power connector.
 
 If you do not want to solder you can probably put the wire through each connector hole on the Pico, butterfly twist the wire and and then hotglue it. Might not survive long term heavy handling.
 
 # Casing
-Generic casing for the board and wires in .stl format available [here](case/dreamcast adapter case.stl). It's a bit wider than a normal casing but I needed a bit more space for the soldered wires and I did want to start cutting plastic on the fat connector part of the wire. It might not click perfectly so I use tape for reinforcement.
+Generic casing for the board and wires in .stl format available [here](case/dreamcast%20adapter%20case.stl). It's a bit wider than a normal casing but I needed a bit more space for the soldered wires and I did want to start cutting plastic on the fat connector part of the wire. It might not click perfectly so I use tape for reinforcement.
 
 ![stl model](pics/case.png)
 
@@ -44,7 +48,7 @@ Alternatively use a plastic container and cut holes in it.
 
 # Testing
 1. Connect your USB OTG cable and hook up a XBOX controller.
-2. Test out a game e.g. Quake Arena
+2. Test out a game e.g. Quake III Arena
 
 Read all the information at https://www.dreamcast-talk.com/forum/viewtopic.php?f=5&t=17404
 
