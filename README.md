@@ -30,10 +30,12 @@ To connect on the USB end:
 
 # Wiring
 Depending on what kind of controller wire you have, you will need to determine what pin on the connector end corresponds with what color wire. Strip the wires if they are not exposed yet. 
-
 Use a multimeter and connect one probe to a controller pin and with the other probe wire. Set it to 200 Ohm and when connecting the wires see if you get a value different from 0. Or if your multimeter has a continuity mode (usually marked with a diode symbol or sound wave icon) then it checks resistance and adds a beep if the resistance is very low.
 
 # Solder the wires, see the following schematic:
+
+![wire layout](pics/dc2pico.png)
+
 ![soldered board](pics/soldered.jpg)
 
 Note: I had to solder an extra piece of wire to reach the power connector.
