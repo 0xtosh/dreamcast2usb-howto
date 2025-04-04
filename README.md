@@ -1,5 +1,6 @@
 # dreamcast2usb-howto
-Dreamcast Controller To USB Adapter
+
+# Dreamcast Controller To USB Adapter
 
 Credit goes to megavolt85 for the firmware and key mapping. 
 All detailed information that I used can be found [here](https://www.dreamcast-talk.com/forum/viewtopic.php?f=5&t=17404)
